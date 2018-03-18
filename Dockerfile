@@ -38,7 +38,7 @@ RUN apt-get install -qy --force-yes curl wget zip unzip git vim software-propert
     && cd ./pi-suite && npm install
 ## Set pi-suite source-code directory as the working directory
 WORKDIR /tmp/pi-suite
-## Expose port 80 to make pi-suite app available
-EXPOSE 80
+## Expose ports 80, 3001, 3004 to make pi-suite app available
+EXPOSE 80 3001 3004
 ## Run pi-suite when container starts
 CMD ["node", "pi-suite"]
