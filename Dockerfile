@@ -41,4 +41,4 @@ WORKDIR /tmp/pi-suite
 ## Expose port 80 to make pi-suite app available
 EXPOSE 80
 ## Run pi-suite when container starts
-CMD ["node", "pi-suite.js"]
+CMD ["node", "pi-suite"]
