@@ -33,6 +33,6 @@ RUN apt-get install -qy --force-yes curl wget zip unzip git vim software-propert
     && cd /tmp \
     && git clone https://github.com/mikesprague/pi-suite.git \
     && cd ./pi-suite && npm install
+WORKDIR /tmp/pi-suite
 EXPOSE 80
-ENTRYPOINT ["/bin/bash"]
-CMD ["node", "/tmp/pi-suite/pi-suite.js"]
+CMD ["node", "pi-suite.js"]
