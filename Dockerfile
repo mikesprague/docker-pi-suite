@@ -1,5 +1,4 @@
 FROM arm32v7/debian:jessie
-MAINTAINER Michael Sprague
 LABEL maintainer.name="Michael Sprague" \
     maintainer.email="mikesprague@gmail.com" \
     version="0.0.7" \
